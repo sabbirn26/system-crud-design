@@ -103,8 +103,6 @@ public class DatabaseOperation {
             ex.printStackTrace();
         }
         return userlist;
-
-
     }
 
     public static void deleteUserInfo(String loginid) throws Exception {
