@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.systemcruddesign.HelloController">
+   <children>
+      <Label layoutX="206.0" layoutY="30.0" text="Update User Info">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField alignment="TOP_CENTER" layoutX="175.0" layoutY="84.0" promptText="Update user name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField alignment="TOP_CENTER" layoutX="178.0" layoutY="156.0" promptText="Update email">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField alignment="TOP_CENTER" layoutX="178.0" layoutY="227.0" promptText="Update password">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="updateUserInfoButton" layoutX="252.0" layoutY="306.0" mnemonicParsing="false" onAction="#setUpdateUserInfoAction" text="Update">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="goBackToAdminPageButton" layoutX="416.0" layoutY="306.0" mnemonicParsing="false" onAction="#setGoBackToAdminHomePageAction" text="Back">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

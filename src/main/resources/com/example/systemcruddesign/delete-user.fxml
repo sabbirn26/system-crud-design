@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.systemcruddesign.HelloController">
+   <children>
+      <Label layoutX="235.0" layoutY="28.0" text="Delete User">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="deletePageButton" layoutX="307.0" layoutY="308.0" mnemonicParsing="false" onAction="#setDeleteUserAction" text="Delete">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="goBackToAdminPageButton" layoutX="465.0" layoutY="308.0" mnemonicParsing="false" onAction="#setGoBackToAdminHomePageAction" text="Go back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="usertable" layoutX="14.0" layoutY="63.0" prefHeight="170.0" prefWidth="563.0">
+        <columns>
+          <TableColumn fx:id="loginidCol" prefWidth="63.20001220703125" text="loginid" />
+            <TableColumn fx:id="usernameCol" prefWidth="124.800048828125" text="username" />
+            <TableColumn fx:id="emailCol" prefWidth="146.39996337890625" text="email" />
+            <TableColumn fx:id="mobileCol" minWidth="0.0" prefWidth="88.79998779296875" text="mobile" />
+            <TableColumn fx:id="passwordCol" prefWidth="137.60002441406255" text="password" />
+        </columns>
+      </TableView>
+      <TextField fx:id="deletetheuser" alignment="TOP_CENTER" layoutX="53.0" layoutY="308.0" promptText="Enter login id to delete">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="showuserInfos" layoutX="248.0" layoutY="250.0" mnemonicParsing="false" onAction="#UserInformations" text="Show Infos">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

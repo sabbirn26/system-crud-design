@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.systemcruddesign.HelloController">
+   <children>
+      <Label layoutX="186.0" layoutY="14.0" text="Registration Page">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="registrationButton" layoutX="127.0" layoutY="346.0" mnemonicParsing="false" onAction="#setRegistration" text="Register">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="susername" layoutX="174.0" layoutY="115.0" promptText="Enter user name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="semail" layoutX="175.0" layoutY="167.0" promptText="Enter email">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="smobile" layoutX="175.0" layoutY="216.0" promptText="Enter mobile number">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="spassword" layoutX="175.0" layoutY="268.0" promptText="Enter password">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Button fx:id="backloginPageButton" layoutX="263.0" layoutY="346.0" mnemonicParsing="false" onAction="#setGoBackLoginButton" text="Go Back">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="cancelButton" layoutX="393.0" layoutY="346.0" mnemonicParsing="false" onAction="#setCancelButton" text="Cancel">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="sloginid" layoutX="174.0" layoutY="62.0" promptText="Enter Unique Login ID">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <Label fx:id="registrationPageLabel" layoutX="175.0" layoutY="318.0" textFill="RED" />
+   </children>
+</AnchorPane>

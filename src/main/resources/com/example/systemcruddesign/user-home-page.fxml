@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.systemcruddesign.UserHomePage">
+   <children>
+      <Label layoutX="226.0" layoutY="14.0" text="User Home Page">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView layoutX="48.0" layoutY="85.0" prefHeight="200.0" prefWidth="526.0">
+        <columns>
+          <TableColumn prefWidth="57.5999755859375" text="user id" />
+          <TableColumn prefWidth="104.0" text="username" />
+            <TableColumn prefWidth="124.79998779296875" text="email" />
+            <TableColumn prefWidth="120.79998779296875" text="mobile" />
+            <TableColumn prefWidth="119.20001220703125" text="password" />
+        </columns>
+      </TableView>
+      <Label layoutX="48.0" layoutY="41.0" text="User Informations:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="80.0" layoutY="317.0" mnemonicParsing="false" text="Update Info">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="414.0" layoutY="317.0" mnemonicParsing="false" text="Logout">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

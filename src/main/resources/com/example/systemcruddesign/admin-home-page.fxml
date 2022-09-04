@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.systemcruddesign.HelloController">
+    <children>
+        <Label layoutX="229.0" layoutY="26.0" text="Hello Admin">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="40.0" layoutY="61.0" text="All user infos: ">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <TableView fx:id="usertable" layoutX="40.0" layoutY="94.0" prefHeight="200.0" prefWidth="516.0">
+            <columns>
+                <TableColumn fx:id="loginidCol" prefWidth="48.79998779296875" text="loginid" />
+                <TableColumn fx:id="usernameCol" prefWidth="113.5999755859375" text="username" />
+                <TableColumn fx:id="emailCol" prefWidth="164.800048828125" text="email" />
+                <TableColumn fx:id="mobileCol" minWidth="1.5999755859375" prefWidth="88.79998779296875" text="mobile" />
+                <TableColumn fx:id="passwordCol" minWidth="0.0" prefWidth="99.20001220703125" text="password" />
+            </columns>
+        </TableView>
+        <Button fx:id="updatePageButton" layoutX="157.0" layoutY="329.0" mnemonicParsing="false" onAction="#setUpdatePageAction" text="Update User">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="deletePageButton" layoutX="303.0" layoutY="327.0" mnemonicParsing="false" onAction="#setGoToDeletePageAction" text="Delete User">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+        <Button fx:id="logoutButton" layoutX="465.0" layoutY="327.0" mnemonicParsing="false" onAction="#setLogoutAction" text="Logout">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Button>
+      <Button fx:id="showuserInfos" layoutX="14.0" layoutY="329.0" mnemonicParsing="false" onAction="#UserInformations" text="Show Users">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
